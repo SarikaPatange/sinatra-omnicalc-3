@@ -1,0 +1,21 @@
+<dl>
+    <dt>user</dt>
+    <dd></dd>
+    <!--<dd></dd>-->
+    <dt>assistant</dt>
+    <dd>It appears that some content was missing from your request. How can I assist you today?</dd>
+    <!--<dd></dd>-->
+    <dt>user</dt>
+    <dd><%= @user_location %></dd>
+    <!--<dd></dd>-->
+    <dt>assistant</dt>
+    <dd>Hello! How can I assist you today?</dd>
+    <!--<dd></dd>-->
+</dl>
+<form action="/add_message_to_chat" method="post">
+  <label for="new_message_field">You:</label>
+  
+  <input id="new_message" type="text" name="user_message" placeholder="Enter a message....">
+
+  <button>Send</button>
+</form>
